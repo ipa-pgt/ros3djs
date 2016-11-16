@@ -1,13 +1,13 @@
 {
   "name": "ros3djs",
   "homepage": "https://www.robotwebtools.org",
-  "description": "The standard ROS Javascript Visualization Library",
+  "description": "Fork of RobotWebTools' ros3djs for Polymer",
   "version": "0.17.0-SNAPSHOT",
   "license": "BSD-3-Clause",
   "main": "./src/Ros3D.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RobotWebTools/ros3djs/releases"
+    "url": "https://github.com/ipa-frn/ros3djs.git#develop"
   },
   "keywords": [
     "ROS",
