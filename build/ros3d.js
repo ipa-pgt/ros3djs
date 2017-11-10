@@ -4938,7 +4938,7 @@ ROS3D.SceneNode.prototype.unsubscribeTf = function() {
  * @constructor
  * @param options - object with following keys:
  *
- *  * divID - the ID of the div to place the viewer in
+ *  * div - the div to place the viewer in
  *  * width - the initial width, in pixels, of the canvas
  *  * height - the initial height, in pixels, of the canvas
  *  * background (optional) - the color to render the background, like '#efefef'
@@ -4949,7 +4949,7 @@ ROS3D.SceneNode.prototype.unsubscribeTf = function() {
  */
 ROS3D.Viewer = function(options) {
   options = options || {};
-  var divID = options.divID;
+  var div = options.div;
   var width = options.width;
   var height = options.height;
   var background = options.background || '#111111';
@@ -5015,7 +5015,7 @@ ROS3D.Viewer = function(options) {
   this.animationRequestId = undefined;
 
   // add the renderer to the page
-  document.getElementById(divID).appendChild(this.renderer.domElement);
+  div.appendChild(this.renderer.domElement);
 
   // begin the render loop
   this.start();
